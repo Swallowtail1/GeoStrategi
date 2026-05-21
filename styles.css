@@ -298,22 +298,14 @@ section.alt {
 }
 
 .posisi-map {
-    background: linear-gradient(135deg, #e8f0f7, #d8e7f0);
     border-radius: 10px;
     padding: 2rem;
     display: flex;
     align-items: center;
-    justify-content: center;
-    min-height: 400px;
-    position: relative;
-    overflow: hidden;
+    justify-content: space-between;
+
 }
 
-.posisi-map::before {
-    content: '🗺️';
-    font-size: 150px;
-    opacity: 0.3;
-}
 
 .map-placeholder {
     text-align: center;
@@ -452,7 +444,7 @@ footer {
     background: #0d3b66;
     color: #fff;
     padding: 3rem 2rem;
-    text-align: center;
+    text-align: left;
 }
 
 footer p {
@@ -462,6 +454,16 @@ footer p {
 footer .footer-content {
     max-width: 1200px;
     margin: 0 auto;
+}
+
+.footer-info {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.footer-info p {
+    margin-right: 5rem;
 }
 
 .footer-divider {
@@ -562,5 +564,24 @@ footer .footer-content {
     .implementasi-grid,
     .summary-grid {
         grid-template-columns: 1fr;
+    }
+    
+    .footer{
+        text-align: center;
+    }
+
+    .footer-info {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-info p {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+
+    .footer-content {
+        padding: 0 1rem;
+        text-align: center;
     }
 }
